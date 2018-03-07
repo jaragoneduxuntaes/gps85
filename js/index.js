@@ -11,7 +11,8 @@ var app = {
     onDeviceReady: function() {
       
 	   var callbackFn = function(location) {
-    alert('[js] Posición en background:  ' + location.latitude + ',' + location.longitude);
+    //alert('[js] Posición en background:  ' + location.latitude + ',' + location.longitude);
+document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
     // Aquí incluímos lo que queramos hacer con la información, incluso enviarla
     // a un servidor si queremos.
     // jQuery.post(url, JSON.stringify(location));
