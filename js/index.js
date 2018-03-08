@@ -9,8 +9,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-    ///////////////////////////////////////
-	/*    
+    
 	   var callbackFn = function(location) {
     //alert('[js] Posición en background:  ' + location.latitude + ',' + location.longitude);
 document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
@@ -39,8 +38,7 @@ document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.l
   backgroundGeolocation.start();
   
 		
-//////////////////////////////
-  */		
+ 		
 		
     },
 
