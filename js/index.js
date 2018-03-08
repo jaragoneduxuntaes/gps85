@@ -9,11 +9,12 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-		document.getElementById("mensaje").text = 'Inicializando...';
+	
+	    document.getElementById("mensaje").innerHTML = 'Inicializando...';
 	
 	   var callbackFn = function(location) {
     //alert('[js] Posición en background:  ' + location.latitude + ',' + location.longitude);
-document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
+document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
     // Aquí incluímos lo que queramos hacer con la información, incluso enviarla
     // a un servidor si queremos.
     // jQuery.post(url, JSON.stringify(location));
@@ -24,7 +25,7 @@ document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.l
   };
  
   var failureFn = function(error) {
-    	document.getElementById("mensaje").text = 'Error gps';
+    	document.getElementById("mensaje").innerHTML = 'Error gps';
   };
  
   // Configuramos el plugin, indicando nuestra función callback y algunas opciones
