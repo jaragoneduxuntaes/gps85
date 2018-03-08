@@ -30,7 +30,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
  
   // Configuramos el plugin, indicando nuestra función callback y algunas opciones
   BackgroundGeolocation.configure(callbackFn, failureFn, {
-	  alert("configurando gps");
+	  //alert("configurando gps");
 	// document.getElementById("mensaje").innerHTML = 'Configurando GPS...';  
 	  
       desiredAccuracy: 10,
@@ -39,11 +39,11 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
       interval: 3000
   });
  
-	    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
+	//    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
   // Activamos la geolocalización en segundo plano
   BackgroundGeolocation.start();
   
-	    document.getElementById("mensaje").innerHTML = 'Esperando resultados...';
+	 //   document.getElementById("mensaje").innerHTML = 'Esperando resultados...';
 		
  		
 		
