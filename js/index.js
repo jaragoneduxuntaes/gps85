@@ -39,12 +39,12 @@ document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.l
   backgroundGeolocation.start();
   
 		
-		
+//////////////////////////////
+  */		
 		
     },
 
-//////////////////////////////
-  */
+
 };
 
 app.initialize();
