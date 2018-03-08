@@ -37,7 +37,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
   });
  
   // Activamos la geolocalización en segundo plano
-  backgroundGeolocation.start();
+  BackgroundGeolocation.start();
   
 		
  		
