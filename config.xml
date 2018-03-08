@@ -24,7 +24,7 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.3.3">
-        <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="+" />
+        
         <variable name="ICON" value="@mipmap/icon" />
         <variable name="SMALL_ICON" value="@mipmap/icon" />
         <variable name="ACCOUNT_NAME" value="@string/app_name" />
