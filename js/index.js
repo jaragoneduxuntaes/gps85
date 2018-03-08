@@ -33,6 +33,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
 	  //alert("configurando gps");
 	// document.getElementById("mensaje").innerHTML = 'Configurando GPS...';  
 	  
+	  
       desiredAccuracy: 10,
       stationaryRadius: 20,
       distanceFilter: 30,
@@ -41,6 +42,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
  
 	//    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
   // Activamos la geolocalización en segundo plano
+	    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
   BackgroundGeolocation.start();
   
 	 //   document.getElementById("mensaje").innerHTML = 'Esperando resultados...';
