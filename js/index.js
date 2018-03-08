@@ -9,7 +9,8 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-    
+		document.getElementById("mensaje").text = 'Inicializando...';
+	
 	   var callbackFn = function(location) {
     //alert('[js] Posición en background:  ' + location.latitude + ',' + location.longitude);
 document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
@@ -23,11 +24,11 @@ document.getElementById("mensaje").text = ' Posición en gps85 :  ' + location.l
   };
  
   var failureFn = function(error) {
-    alert('Error');
+    	document.getElementById("mensaje").text = 'Error gps';
   };
  
   // Configuramos el plugin, indicando nuestra función callback y algunas opciones
-  backgroundGeolocation.configure(callbackFn, failureFn, {
+  BackgroundGeolocation.configure(callbackFn, failureFn, {
       desiredAccuracy: 10,
       stationaryRadius: 20,
       distanceFilter: 30,
