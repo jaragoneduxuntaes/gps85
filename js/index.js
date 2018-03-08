@@ -30,10 +30,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
  
   // Configuramos el plugin, indicando nuestra función callback y algunas opciones
   backgroundGeolocation.configure(callbackFn, failureFn, {
-	  //alert("configurando gps");
-	// document.getElementById("mensaje").innerHTML = 'Configurando GPS...';  
-	  
-	  
+ 
       desiredAccuracy: 10,
       stationaryRadius: 20,
       distanceFilter: 30,
