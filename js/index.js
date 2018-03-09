@@ -30,9 +30,9 @@ var app = {
   };
  
   // Configuramos el plugin, indicando nuestra función callback y algunas opciones
-  BackgroundGeolocation.configure(callbackFn, failureFn, {
- 
-      desiredAccuracy: 10,
+  
+	    backgroundGeolocation.configure(callbackFn, failureFn, {
+       desiredAccuracy: 10,
       stationaryRadius: 20,
       distanceFilter: 30,
       interval: 3000
@@ -40,8 +40,8 @@ var app = {
  
 	//    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
   // Activamos la geolocalización en segundo plano
-	    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
-  BackgroundGeolocation.start();
+	
+  backgroundGeolocation.start();
   
 	 //   document.getElementById("mensaje").innerHTML = 'Esperando resultados...';
 		
