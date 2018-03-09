@@ -14,7 +14,8 @@ var app = {
 	
 	   var callbackFn = function(location) {
     //alert('[js] Posición en background:  ' + location.latitude + ',' + location.longitude);
-document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
+//document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + location.latitude + ',' + location.longitude;
+   document.getElementById("mensaje").innerHTML = 'Activado GPS !!!';
     // Aquí incluímos lo que queramos hacer con la información, incluso enviarla
     // a un servidor si queremos.
     // jQuery.post(url, JSON.stringify(location));
@@ -29,7 +30,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
   };
  
   // Configuramos el plugin, indicando nuestra función callback y algunas opciones
-  backgroundGeolocation.configure(callbackFn, failureFn, {
+  BackgroundGeolocation.configure(callbackFn, failureFn, {
  
       desiredAccuracy: 10,
       stationaryRadius: 20,
@@ -40,7 +41,7 @@ document.getElementById("mensaje").innerHTML = ' Posición en gps85 :  ' + locat
 	//    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
   // Activamos la geolocalización en segundo plano
 	    document.getElementById("mensaje").innerHTML = 'Vamos a activar...';
-  backgroundGeolocation.start();
+  BackgroundGeolocation.start();
   
 	 //   document.getElementById("mensaje").innerHTML = 'Esperando resultados...';
 		
